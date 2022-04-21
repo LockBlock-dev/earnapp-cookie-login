@@ -1,6 +1,6 @@
 {
     "name": "earnapp-cookie-login",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Login to your EarnApp accounts with a cookie",
     "main": "index.js",
     "scripts": {

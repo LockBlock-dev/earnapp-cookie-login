@@ -29,7 +29,11 @@ const bot = async (cookie) => {
         oauthRefreshToken: cookie,
     });
 
-    const user = await client.userData();
+    let user = {};
+
+    try {
+        user = await client.userData();
+    } catch {}
 
     if (!user.email) {
         log(`The following cookie is bad:\n${cookie}`, "warn");
